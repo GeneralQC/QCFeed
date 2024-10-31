@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('background.jpg');
+   /* background-color: #f4f6f9; */
+    color: #333;
+    font-family: Arial, sans-serif; /* กำหนดฟอนต์ให้กับเนื้อหา */
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content .logo {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.tab-menu {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tab-menu button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.tab-menu button:hover {
+    background-color: #0056b3;
+}
+
+.tab-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.file-item img {
+    width: 40px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.file-info h2 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.file-info p {
+    font-size: 14px;
+    color: #555;
+}
+
+.download-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.download-btn:hover {
+    background-color: #218838;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.disabled {
+    color: gray; /* Change to your desired gray color */
+    background-color: #f0f0f0; /* Optional: Light gray background */
+    cursor: not-allowed; /* Show not-allowed cursor */
+    border: 1px solid gray; /* Optional: Gray border */
+}
+.disabled:hover {
+    color: gray; /* Maintain gray text color */
+    background-color: #e0e0e0; /* Darker gray background on hover */
+    border: 1px solid darkgray; /* Optional: Darker gray border on hover */
+    cursor: not-allowed; /* Still show not-allowed cursor */
+}
+header-content {
+    position: relative; /* เพื่อจัดการตำแหน่งปุ่ม */
+}
+
+.language-switcher {
+    position: absolute; /* วางปุ่มให้มุมขวาบน */
+    top: 10px; /* ห่างจากด้านบน */
+    right: 10px; /* ห่างจากด้านขวา */
+}
+
+.lang-btn {
+    background-color: #007BFF; /* สีพื้นหลัง */
+    color: white; /* สีข้อความ */
+    border: none; /* ไม่มีขอบ */
+    border-radius: 5px; /* มุมมน */
+    padding: 10px 15px; /* ระยะห่างภายใน */
+    font-size: 16px; /* ขนาดฟอนต์ */
+    cursor: pointer; /* เปลี่ยนเป็น pointer เมื่อชี้ไปที่ปุ่ม */
+    transition: background-color 0.3s ease; /* ทำให้สีพื้นหลังเปลี่ยนอย่างนุ่มนวล */
+}
+
+.lang-btn:hover {
+    background-color: #0056b3; /* เปลี่ยนสีเมื่อชี้ไปที่ปุ่ม */
+}
+
+.lang-btn:focus {
+    outline: none; /* ลบกรอบที่ปรากฏเมื่อคลิกปุ่ม */
+}
+.language-switcher {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.lang-select {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lang-select:hover {
+    background-color: #0056b3;
+}
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #f7f7f7; /* เปลี่ยนสีตามที่ต้องการ */
+}
+
+.menu a:hover {
+    text-decoration: underline; /* เปลี่ยนการจัดรูปแบบเมื่อชี้เมาส์ */
+}
