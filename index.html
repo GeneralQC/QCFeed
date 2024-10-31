@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPF QC Feed Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="icons/logo.png" alt="CPF IT Logo" class="logo">
+            <h1 id="title">QC Feed</h1>
+            <p id="subtitle">CPF QC Feed Thailand Center</p>
+            <div class="language-switcher">
+                <select id="language-dropdown" onchange="changeLanguage(this.value)" class="lang-select">
+                    <option value="th">ภาษาไทย</option>
+                    <option value="en">English</option>
+                    <option value="my">မြန်မာ</option>
+                    <option value="ph">Filipino</option>
+                    <option value="kh">Khmer</option>
+                    <option value="vi">Tiếng Việt</option>
+                    <option value="lo">ລາວ</option>
+                    <option value="bd">বাংলা</option>
+                </select>
+            </div>
+         
+        </div>
+    </header>
+
+    <div class="tab-content" id="android">
+        <div id="file-list"></div>
+        
+        <div class="pagination">
+            <button onclick="prevPage()" id="prev-btn" disabled>Previous</button>
+            <span id="page-info">Page 1</span>
+            <button onclick="nextPage()" id="next-btn">Next</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
